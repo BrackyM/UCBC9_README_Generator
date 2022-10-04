@@ -6,6 +6,21 @@ const generateMarkdown = require("./utils/generateMarkdown")
 const questions = [
 {
     type: 'input',
+    message: "What is your name?",
+    name: 'user'
+},
+{
+    type: 'input',
+    message: "What is your Github Username?",
+    name: 'githubUsername'
+},
+{
+    type: 'input',
+    message: "What is your contact email?",
+    name: 'email'
+},
+{
+    type: 'input',
     message: "What is your title",
     name: 'title'
 },
@@ -13,11 +28,6 @@ const questions = [
     type: 'input',
     message: "What is your description",
     name: 'description'
-},
-{
-    type: 'input',
-    message: "What is your tableofContents ",
-    name: 'tableofContents'
 },
 {
     type: 'input',
@@ -47,12 +57,8 @@ const questions = [
     type: 'input',
     message: "What is your tests",
     name: 'tests'
-},
-{
-    type: 'input',
-    message: "What is your questions",
-    name: 'questions'
-}];
+}
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
