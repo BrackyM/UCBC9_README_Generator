@@ -6,7 +6,7 @@ const generateMarkdown = require("./utils/generateMarkdown")
 const questions = [
 {
     type: 'input',
-    message: "What is your name?",
+    message: "What is your full name?",
     name: 'user'
 },
 {
@@ -21,41 +21,43 @@ const questions = [
 },
 {
     type: 'input',
-    message: "What is your title",
+    message: "What is the title of your project?",
     name: 'title'
 },
 {
     type: 'input',
-    message: "What is your description",
+    message: "What is this description of your project?",
     name: 'description'
 },
 {
     type: 'input',
-    message: "What is your installation",
+    message: "What are the installation instructions of your project?",
     name: 'installation'
 },
 {
     type: 'input',
-    message: "What is your usage",
+    message: "How you can/should use your project?",
     name: 'usage'
 },
 {
     type: 'list',
-    message: "What is your license",
+    message: "What license did you use?",
     name: 'license',
     choices: [
-        "MIT",
-        "BSD"
+        "MIT License",
+        "Apache License 2.0",
+        "Mozilla Public License 2.0 (MPL-2.0)",
+        "The Unliscense"
     ]
 },
 {
     type: 'input',
-    message: "What is your contributing",
+    message: "How can people contribute to your project?",
     name: 'contributing'
 },
 {
     type: 'input',
-    message: "What is your tests",
+    message: "How can users test your project?",
     name: 'tests'
 }
 ];
@@ -71,7 +73,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers) => {
         const data = generateMarkdown(answers)
-        writeToFile("GREADME.md", data)
+        writeToFile("GeneratedREADME.md", data)
     })
 }
 
