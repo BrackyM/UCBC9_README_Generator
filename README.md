@@ -38,20 +38,20 @@ JavaScript Screenshots
 
 * Screenshot 1: Selecting a License Link
 
-![App Screenshot](Assets\screenshot1.JPG)
+![App Screenshot](./Assets/screenshot1.JPG)
 
 * Screenshot 2: Example Questions users will be asked
 
-![App Screenshot](Assets\screenshot2.JPG)
+![App Screenshot](./Assets/screenshot2.JPG)
 
 * Screenshot 3: Console Results of the Video Demonstration
 
-![App Screenshot](Assets\screenshot3.JPG)
+![App Screenshot](./Assets/screenshot3.JPG)
 
 ## Assignment Links
 
 - [Tutorial Video](https://drive.google.com/file/d/1RF4dJNbZtg520rrUcZWNbl-hOlDTMvAA/view)
-- [Github Project Repository](git@github.com:BrackyM/UCBC9_README_Generator.git)
+- [Github Project Repository](https://github.com/BrackyM/UCBC9_README_Generator)
 
 
 ##  Contributors / Resouces Used
